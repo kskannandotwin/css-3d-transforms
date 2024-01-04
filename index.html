@@ -4,8 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS 3d Transforms</title>
+    <style>
+        body {
+            perspective: 500px;
+        }
+
+        img {
+            width: 300px;
+            display: block;
+            margin: auto;
+            margin-top: 200px;
+            transition: transform 1s;            
+        }
+
+        img:hover {
+            transform: translateZ(300px);
+        }
+    </style>
 </head>
 <body>
-    
+    <img src="cat.jpg">
 </body>
 </html>
